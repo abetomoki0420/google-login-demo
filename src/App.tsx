@@ -11,6 +11,7 @@ export const App = () => {
       { auth ? (
         <div>
           <p>Success!!</p>
+          <h2>Your Profile</h2>
           <UserProfile/>
           <LogoutButton/>
         </div>
