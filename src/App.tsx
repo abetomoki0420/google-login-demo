@@ -1,4 +1,5 @@
 import { LoginButton, LogoutButton } from "./components/LoginButton"
+import { UserProfile } from "./components/UserProfile"
 import { useAuth } from "./hooks/useAuth"
 
 export const App = () => {
@@ -10,6 +11,7 @@ export const App = () => {
       { auth ? (
         <div>
           <p>Success!!</p>
+          <UserProfile/>
           <LogoutButton/>
         </div>
       ): (
