@@ -1,6 +1,7 @@
 import { useEffect, useRef } from "react"
 import { useEnv } from "../hooks/useEnv"
 import { useAuth } from "../hooks/useAuth"
+import { Button } from "@radix-ui/themes"
 
 export const LoginButton = () => {
   const { googleClientId } = useEnv()
@@ -42,13 +43,13 @@ export const LogoutButton = () => {
   const { setAuth } = useAuth();
 
   return (
-    <button
+    <Button
       onClick={() => {
         google.accounts.id.disableAutoSelect();
         setAuth(null);
       }}
       >
       Logout
-    </button>
+    </Button>
   )
 }
