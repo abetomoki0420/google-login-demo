@@ -9,8 +9,10 @@
 
 ## インストール方法
 1. リポジトリをクローンします。
-2. `npm install` を実行して必要な依存関係をインストールします。
-3. `npm run dev` を実行して開発サーバーを起動します。
+1. [Google API Console](https://developers.google.com/identity/gsi/web/guides/get-google-api-clientid?hl=ja#get_your_google_api_client_id) からクライアントIDを取得します。
+1. 取得したクライアントIDを `.env`ファイルに`VITE_GOOGLE_CLIENT_ID`として設定します。
+1. `npm install` を実行して必要な依存関係をインストールします。
+1. `npm run dev` を実行して開発サーバーを起動します。
 
 ## 使用技術
 - React
